@@ -1,8 +1,25 @@
-name: Release Builds
-on: push
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      skip:
+        required: true
+        default: true
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-wheels:
+    name: "${{ matrix.os }} :: ${{ matrix.platform }}-${{ matrix.arch }}"
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        # emulated linux: generate 6 matrix combinations with qemu on ubuntu:
+        arch: ["aarch64", "ppc64le", "s390x"]
+        platform: ["manylinux", "musllinux"]
+        os: [ubuntu-latest]
+        use_qemu: [true]
+        exclude:
+          - os: ubuntu-latest
+            use_qemu: ${{ github.event.inputs.skip }}
     steps:
-      - run: pwd
-      - run: echo ~
+      - run: echo ${{ github.event.inputs.skip }}
