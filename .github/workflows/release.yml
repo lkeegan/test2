@@ -20,7 +20,7 @@ jobs:
         use_qemu: [true]
         exclude:
           - os: ubuntu-latest
-            use_qemu: true #fromJSON(${{ github.event.inputs.skip }})
+            use_qemu: fromJSON(${{ github.event.inputs.skip }})
         include:
           - os: ubuntu-latest
             use_qemu: false
