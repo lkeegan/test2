@@ -17,13 +17,13 @@ jobs:
         arch: ["aarch64", "ppc64le", "s390x"]
         platform: ["manylinux", "musllinux"]
         os: [ubuntu-latest]
-        use_qemu: [true]
+        use_qemu: ["true"]
         exclude:
           - os: ubuntu-latest
-            use_qemu: ${{ github.event.inputs.skip == 'true' }})
+            use_qemu: ${{ github.event.inputs.skip }}
         include:
           - os: ubuntu-latest
-            use_qemu: false
+            use_qemu: "false"
 
     steps:
       - run: echo ${{ github.event.inputs.skip }}
