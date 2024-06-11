@@ -21,5 +21,9 @@ jobs:
         exclude:
           - os: ubuntu-latest
             use_qemu: true #fromJSON(${{ github.event.inputs.skip }})
+        include:
+          - os: ubuntu-latest
+            use_qemu: false
+
     steps:
       - run: echo ${{ github.event.inputs.skip }}
