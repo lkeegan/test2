@@ -1,0 +1,17 @@
+backend.patients
+================
+
+.. automodule:: backend.patients
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   fhir
+   resources
+   serializers
+   urls
+   views

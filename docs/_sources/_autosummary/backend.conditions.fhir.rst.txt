@@ -1,0 +1,13 @@
+backend.conditions.fhir
+=======================
+
+.. automodule:: backend.conditions.fhir
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      condition_res
+      resource_from_bundle
+   

@@ -1,0 +1,13 @@
+backend.patients.views
+======================
+
+.. automodule:: backend.patients.views
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      id
+      list
+   

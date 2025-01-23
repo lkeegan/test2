@@ -1,0 +1,10 @@
+data.encounters package
+=======================
+
+Module contents
+---------------
+
+.. automodule:: data.encounters
+   :members:
+   :undoc-members:
+   :show-inheritance:

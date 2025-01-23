@@ -1,0 +1,12 @@
+backend.journeys.resources
+==========================
+
+.. automodule:: backend.journeys.resources
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Journey
+   

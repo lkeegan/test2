@@ -1,0 +1,21 @@
+backend.database.views
+======================
+
+.. automodule:: backend.database.views
+
+   
+   .. rubric:: Module Attributes
+
+   .. autosummary::
+   
+      data_dir
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_files
+      get_patient_state
+      index
+      pat_resource_extensions
+   

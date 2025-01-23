@@ -1,0 +1,15 @@
+backend.questionnaire\_responses.resources
+==========================================
+
+.. automodule:: backend.questionnaire_responses.resources
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Answer
+      QuestionnaireResponse
+      QuestionnaireResponseItem
+      QuestionnaireResponseItemGroup
+   

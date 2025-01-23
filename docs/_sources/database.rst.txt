@@ -1,0 +1,29 @@
+database package
+================
+
+Submodules
+----------
+
+database.urls module
+--------------------
+
+.. automodule:: database.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+database.views module
+---------------------
+
+.. automodule:: database.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: database
+   :members:
+   :undoc-members:
+   :show-inheritance:

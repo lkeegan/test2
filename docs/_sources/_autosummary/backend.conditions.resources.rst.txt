@@ -1,0 +1,12 @@
+backend.conditions.resources
+============================
+
+.. automodule:: backend.conditions.resources
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Condition
+   

@@ -1,0 +1,18 @@
+backend.tests.test\_api
+=======================
+
+.. automodule:: backend.tests.test_api
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      test_encounters
+      test_journey_id
+      test_measurereports
+      test_patient_id
+      test_patient_list
+      test_questionnaire_list
+      test_questionnaireresponse
+   

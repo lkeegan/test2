@@ -1,0 +1,14 @@
+backend.journeys.fhir
+=====================
+
+.. automodule:: backend.journeys.fhir
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      journey_index
+      journey_res
+      resource_from_bundle
+   

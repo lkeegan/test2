@@ -1,0 +1,20 @@
+backend.tests.test\_fhir\_patient
+=================================
+
+.. automodule:: backend.tests.test_fhir_patient
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      parse_obj
+      test_fhir_patient
+      validate
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      patients
+   

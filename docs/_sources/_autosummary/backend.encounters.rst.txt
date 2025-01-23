@@ -1,0 +1,17 @@
+backend.encounters
+==================
+
+.. automodule:: backend.encounters
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   fhir
+   resources
+   serializers
+   urls
+   views

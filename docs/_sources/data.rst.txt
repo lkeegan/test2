@@ -1,0 +1,26 @@
+data package
+============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   data.codesystems
+   data.diagnosticreports
+   data.encounters
+   data.measurereports
+   data.observations
+   data.patients
+   data.questionnaireresponses
+   data.questionnaires
+   data.score-observations
+
+Module contents
+---------------
+
+.. automodule:: data
+   :members:
+   :undoc-members:
+   :show-inheritance:

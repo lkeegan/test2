@@ -1,0 +1,13 @@
+backend.journeys.views
+======================
+
+.. automodule:: backend.journeys.views
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      id
+      list
+   

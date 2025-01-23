@@ -1,0 +1,12 @@
+backend.measure\_reports.resources
+==================================
+
+.. automodule:: backend.measure_reports.resources
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      MeasureReport
+   

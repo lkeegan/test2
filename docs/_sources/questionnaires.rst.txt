@@ -1,0 +1,53 @@
+questionnaires package
+======================
+
+Submodules
+----------
+
+questionnaires.fhir module
+--------------------------
+
+.. automodule:: questionnaires.fhir
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+questionnaires.resources module
+-------------------------------
+
+.. automodule:: questionnaires.resources
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+questionnaires.serializers module
+---------------------------------
+
+.. automodule:: questionnaires.serializers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+questionnaires.urls module
+--------------------------
+
+.. automodule:: questionnaires.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+questionnaires.views module
+---------------------------
+
+.. automodule:: questionnaires.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: questionnaires
+   :members:
+   :undoc-members:
+   :show-inheritance:

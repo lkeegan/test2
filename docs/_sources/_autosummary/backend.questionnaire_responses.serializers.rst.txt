@@ -1,0 +1,12 @@
+backend.questionnaire\_responses.serializers
+============================================
+
+.. automodule:: backend.questionnaire_responses.serializers
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      QuestionnaireResponseSerializer
+   

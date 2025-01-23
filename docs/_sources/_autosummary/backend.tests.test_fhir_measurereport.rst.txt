@@ -1,0 +1,20 @@
+backend.tests.test\_fhir\_measurereport
+=======================================
+
+.. automodule:: backend.tests.test_fhir_measurereport
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      parse_obj
+      test_fhir_patient
+      validate
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      measurereports
+   

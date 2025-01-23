@@ -1,0 +1,16 @@
+backend.questionnaires.resources
+================================
+
+.. automodule:: backend.questionnaires.resources
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Questionnaire
+      QuestionnaireAction
+      QuestionnaireField
+      QuestionnaireItem
+      QuestionnaireItemGroup
+   

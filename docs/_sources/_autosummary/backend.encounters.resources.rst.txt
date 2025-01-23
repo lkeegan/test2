@@ -1,0 +1,13 @@
+backend.encounters.resources
+============================
+
+.. automodule:: backend.encounters.resources
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Encounter
+      Step
+   

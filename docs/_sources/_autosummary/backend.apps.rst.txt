@@ -1,0 +1,12 @@
+backend.apps
+============
+
+.. automodule:: backend.apps
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      BackendConfig
+   

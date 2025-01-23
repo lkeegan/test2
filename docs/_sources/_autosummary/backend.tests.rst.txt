@@ -1,0 +1,19 @@
+backend.tests
+=============
+
+.. automodule:: backend.tests
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   test_api
+   test_fhir_encounter
+   test_fhir_journey
+   test_fhir_measurereport
+   test_fhir_patient
+   test_fhir_questionnaire
+   test_fhir_questionnaire_response

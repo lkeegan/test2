@@ -1,0 +1,14 @@
+backend.patients.resources
+==========================
+
+.. automodule:: backend.patients.resources
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Address
+      Name
+      Patient
+   

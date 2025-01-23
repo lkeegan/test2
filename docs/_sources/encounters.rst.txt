@@ -1,0 +1,53 @@
+encounters package
+==================
+
+Submodules
+----------
+
+encounters.fhir module
+----------------------
+
+.. automodule:: encounters.fhir
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+encounters.resources module
+---------------------------
+
+.. automodule:: encounters.resources
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+encounters.serializers module
+-----------------------------
+
+.. automodule:: encounters.serializers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+encounters.urls module
+----------------------
+
+.. automodule:: encounters.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+encounters.views module
+-----------------------
+
+.. automodule:: encounters.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: encounters
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,12 @@
+backend.encounters.views
+========================
+
+.. automodule:: backend.encounters.views
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      patient_id
+   

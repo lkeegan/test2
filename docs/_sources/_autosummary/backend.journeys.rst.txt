@@ -1,0 +1,17 @@
+backend.journeys
+================
+
+.. automodule:: backend.journeys
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   fhir
+   resources
+   serializers
+   urls
+   views

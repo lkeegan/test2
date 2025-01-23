@@ -1,0 +1,12 @@
+backend.encounters.serializers
+==============================
+
+.. automodule:: backend.encounters.serializers
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      EncounterSerializer
+   

@@ -1,0 +1,14 @@
+backend.measure\_reports.views
+==============================
+
+.. automodule:: backend.measure_reports.views
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      decision_update
+      list
+      patient_id
+   

@@ -1,0 +1,53 @@
+measure\_reports package
+========================
+
+Submodules
+----------
+
+measure\_reports.fhir module
+----------------------------
+
+.. automodule:: measure_reports.fhir
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+measure\_reports.resources module
+---------------------------------
+
+.. automodule:: measure_reports.resources
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+measure\_reports.serializers module
+-----------------------------------
+
+.. automodule:: measure_reports.serializers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+measure\_reports.urls module
+----------------------------
+
+.. automodule:: measure_reports.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+measure\_reports.views module
+-----------------------------
+
+.. automodule:: measure_reports.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: measure_reports
+   :members:
+   :undoc-members:
+   :show-inheritance:

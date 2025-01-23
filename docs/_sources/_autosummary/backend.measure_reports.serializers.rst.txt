@@ -1,0 +1,12 @@
+backend.measure\_reports.serializers
+====================================
+
+.. automodule:: backend.measure_reports.serializers
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      MeasureReportSerializer
+   

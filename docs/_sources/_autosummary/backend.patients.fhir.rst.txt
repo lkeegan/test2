@@ -1,0 +1,15 @@
+backend.patients.fhir
+=====================
+
+.. automodule:: backend.patients.fhir
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_address
+      get_name
+      patient_res
+      resource_from_bundle
+   

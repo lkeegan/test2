@@ -1,0 +1,12 @@
+backend.conditions.serializers
+==============================
+
+.. automodule:: backend.conditions.serializers
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      ConditionSerializer
+   

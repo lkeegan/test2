@@ -1,0 +1,13 @@
+backend.questionnaire\_responses.views
+======================================
+
+.. automodule:: backend.questionnaire_responses.views
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      id
+      patient_id
+   

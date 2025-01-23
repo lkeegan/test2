@@ -1,0 +1,12 @@
+backend.patients.serializers
+============================
+
+.. automodule:: backend.patients.serializers
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      PatientSerializer
+   

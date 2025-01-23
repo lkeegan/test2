@@ -1,0 +1,13 @@
+backend.encounters.fhir
+=======================
+
+.. automodule:: backend.encounters.fhir
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      encounter_res
+      resource_from_bundle
+   
