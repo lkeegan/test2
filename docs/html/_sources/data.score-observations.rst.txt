@@ -1,0 +1,10 @@
+data.score\-observations package
+================================
+
+Module contents
+---------------
+
+.. automodule:: data.score-observations
+   :members:
+   :undoc-members:
+   :show-inheritance:

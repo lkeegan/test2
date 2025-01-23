@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Measure Reports &mdash; backend  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Patients" href="patients.html" />
+    <link rel="prev" title="Journeys" href="journeys.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            backend
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local_development.html">Development</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="conditions.html">Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encounters.html">Encounters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journeys.html">Journeys</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Measure Reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.fhir">measure_reports.fhir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.decision_update"><code class="docutils literal notranslate"><span class="pre">decision_update()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.diagnostic_report_by_ref"><code class="docutils literal notranslate"><span class="pre">diagnostic_report_by_ref()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.measure_report_decisions"><code class="docutils literal notranslate"><span class="pre">measure_report_decisions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.measure_report_res"><code class="docutils literal notranslate"><span class="pre">measure_report_res()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.observations_by_ref"><code class="docutils literal notranslate"><span class="pre">observations_by_ref()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.resource_from_bundle"><code class="docutils literal notranslate"><span class="pre">resource_from_bundle()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.resources">measure_reports.resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.resources.MeasureReport"><code class="docutils literal notranslate"><span class="pre">MeasureReport</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.serializers">measure_reports.serializers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.serializers.MeasureReportSerializer"><code class="docutils literal notranslate"><span class="pre">MeasureReportSerializer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.urls">measure_reports.urls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.views">measure_reports.views</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.views.decision_update"><code class="docutils literal notranslate"><span class="pre">decision_update()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.views.list"><code class="docutils literal notranslate"><span class="pre">list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measure_reports.views.patient_id"><code class="docutils literal notranslate"><span class="pre">patient_id()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="patients.html">Patients</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaires.html">Questionnaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">Questionnaire Responses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">backend</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Measure Reports</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/measure_reports.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="measure-reports">
+<h1>Measure Reports<a class="headerlink" href="#measure-reports" title="Link to this heading"></a></h1>
+<p>Some general introduction to this package</p>
+<section id="module-measure_reports.fhir">
+<span id="measure-reports-fhir"></span><h2>measure_reports.fhir<a class="headerlink" href="#module-measure_reports.fhir" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.fhir.decision_update">
+<span class="sig-prename descclassname"><span class="pre">measure_reports.fhir.</span></span><span class="sig-name descname"><span class="pre">decision_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">report</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decision</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.fhir.decision_update" title="Link to this definition"></a></dt>
+<dd><p>Function to update the decision</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>report (any): MeasureReport resource
+data (any): Decision data</p>
+</dd>
+<dt>Returns:</dt><dd><p>any: MeasureReport</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.fhir.diagnostic_report_by_ref">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.fhir.</span></span><span class="sig-name descname"><span class="pre">diagnostic_report_by_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.fhir.diagnostic_report_by_ref" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of Observations by DiagnosticReport id</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ref (any): Reference</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.fhir.measure_report_decisions">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.fhir.</span></span><span class="sig-name descname"><span class="pre">measure_report_decisions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.fhir.measure_report_decisions" title="Link to this definition"></a></dt>
+<dd><p>All patient decisions (“inpatient”, “outpatient” or “no decision”)
+Args:</p>
+<blockquote>
+<div><p>meas (any): MeasureReport
+scores (any, optional): Score values. Defaults to None.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>any: JSON response</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.fhir.measure_report_res">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.fhir.</span></span><span class="sig-name descname"><span class="pre">measure_report_res</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.fhir.measure_report_res" title="Link to this definition"></a></dt>
+<dd><p>Returns id and boolean value of the MeasureReport</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>meas (any): MeasureReport</p>
+</dd>
+<dt>Returns:</dt><dd><p>any: id of the Measurereport, value (0=outpatient, 1=inpatient), details</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.fhir.observations_by_ref">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.fhir.</span></span><span class="sig-name descname"><span class="pre">observations_by_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.fhir.observations_by_ref" title="Link to this definition"></a></dt>
+<dd><p>Returns an Observation by id</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ref (any): Reference</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.fhir.resource_from_bundle">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.fhir.</span></span><span class="sig-name descname"><span class="pre">resource_from_bundle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.fhir.resource_from_bundle" title="Link to this definition"></a></dt>
+<dd><p>Resource array (JSON dictionaries) from FHIR Bundle items</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>res (any): FHIR Bundle resource</p>
+</dd>
+<dt>Returns:</dt><dd><p>any: Array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-measure_reports.resources">
+<span id="measure-reports-resources"></span><h2>measure_reports.resources<a class="headerlink" href="#module-measure_reports.resources" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="measure_reports.resources.MeasureReport">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.resources.</span></span><span class="sig-name descname"><span class="pre">MeasureReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.resources.MeasureReport" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>MeasureReport / DiagnosticReports (id, value, decision)
+reason: Reason for decision (“inpatient”, “outpatient” or “no decision”)
+details: Scores (name, score, interpretation and data)</p>
+</dd></dl>
+
+</section>
+<section id="module-measure_reports.serializers">
+<span id="measure-reports-serializers"></span><h2>measure_reports.serializers<a class="headerlink" href="#module-measure_reports.serializers" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="measure_reports.serializers.MeasureReportSerializer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.serializers.</span></span><span class="sig-name descname"><span class="pre">MeasureReportSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.serializers.MeasureReportSerializer" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Serializer</span></code></p>
+<p>JSON serializer class for the MeasureReport route</p>
+</dd></dl>
+
+</section>
+<section id="module-measure_reports.urls">
+<span id="measure-reports-urls"></span><h2>measure_reports.urls<a class="headerlink" href="#module-measure_reports.urls" title="Link to this heading"></a></h2>
+</section>
+<section id="module-measure_reports.views">
+<span id="measure-reports-views"></span><h2>measure_reports.views<a class="headerlink" href="#module-measure_reports.views" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.views.decision_update">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.views.</span></span><span class="sig-name descname"><span class="pre">decision_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.views.decision_update" title="Link to this definition"></a></dt>
+<dd><p>Updates the current patient decision reason.</p>
+<ul class="simple">
+<li><p>decision: current decision (-1 if there is no confirmed decision)</p></li>
+<li><p>message: decision reason</p></li>
+</ul>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>any: JSON response</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.views.list">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.views.</span></span><span class="sig-name descname"><span class="pre">list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.views.list" title="Link to this definition"></a></dt>
+<dd><p>MeasureReports list</p>
+<p>Returns list of decisions by patient</p>
+<ul class="simple">
+<li><p>value: Recommended decision (0 for stationary recommendation, otherwise 1)</p></li>
+<li><p>decision: Current decision (-1 if there is no confirmed decision)</p></li>
+<li><p>reason: Decision reason text</p></li>
+</ul>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>_type_: Response</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="measure_reports.views.patient_id">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.views.</span></span><span class="sig-name descname"><span class="pre">patient_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.views.patient_id" title="Link to this definition"></a></dt>
+<dd><p>MeasureReports by patient
+Returns list of decisions by patient.</p>
+<ul class="simple">
+<li><p>value: Recommended decision (0 for stationary recommendation, otherwise 1)</p></li>
+<li><p>decision: Current decision (-1 if there is no confirmed decision)</p></li>
+<li><p>reason: Decision reason text</p></li>
+<li><p>details: List of scores (name, score value, interpretation, score data)</p></li>
+</ul>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>any: JSON response</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="journeys.html" class="btn btn-neutral float-left" title="Journeys" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="patients.html" class="btn btn-neutral float-right" title="Patients" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, OliverGlz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

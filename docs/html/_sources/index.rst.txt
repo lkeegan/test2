@@ -1,0 +1,24 @@
+Arztansicht Backend
+===================
+
+High level description of what this is, what other services it interacts with goes here - this is the home page of the docs...
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Getting started
+
+   overview
+   local_development
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API
+
+   conditions
+   database
+   encounters
+   journeys
+   measure_reports
+   patients
+   questionnaires
+   questionnaire_responses

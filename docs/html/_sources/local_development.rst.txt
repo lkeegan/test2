@@ -1,0 +1,33 @@
+Development
+===========
+
+Basic info on cloning the repo, installing dependencies, etc.
+
+Run locally with Python
+-----------------------
+
+Create the database
+
+:code:`python manage.py migrate`
+
+Create a new Django account
+
+:code:`python manage.py createsuperuser`
+
+Start the Django server
+
+:code:`python manage.py runserver`
+
+Start the `HAPI FHIR server <https://github.com/hapifhir/hapi-fhir-jpaserver-starter?tab=readme-ov-file#running-via-docker-hub>`_ using Docker
+:code:`docker run -p 8080:8080 hapiproject/hapi:latest`
+
+Initialize the server with FHIR resources
+
+- By opening the `/api/database` route at http://127.0.0.1:8000/api/database/
+
+Run with Docker
+---------------
+
+Build and run the Docker containers
+
+:code:`docker-compose up --build -d`

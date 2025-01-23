@@ -1,0 +1,44 @@
+Conditions
+==========
+
+Some general introduction to this package
+
+conditions.fhir
+---------------
+
+.. automodule:: conditions.fhir
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+conditions.resources
+--------------------
+
+.. automodule:: conditions.resources
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+conditions.serializers
+----------------------
+
+.. automodule:: conditions.serializers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+conditions.urls
+---------------
+
+.. automodule:: conditions.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+conditions.views
+----------------
+
+.. automodule:: conditions.views
+   :members:
+   :undoc-members:
+   :show-inheritance:

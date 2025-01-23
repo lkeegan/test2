@@ -1,0 +1,4 @@
+Overview
+========
+
+Describe the general structure, e.g. packages for different types of data, each package has fhir, resources, serializers, views submodules...

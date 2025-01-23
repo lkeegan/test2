@@ -1,0 +1,10 @@
+data.diagnosticreports package
+==============================
+
+Module contents
+---------------
+
+.. automodule:: data.diagnosticreports
+   :members:
+   :undoc-members:
+   :show-inheritance:

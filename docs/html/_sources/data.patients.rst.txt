@@ -1,0 +1,10 @@
+data.patients package
+=====================
+
+Module contents
+---------------
+
+.. automodule:: data.patients
+   :members:
+   :undoc-members:
+   :show-inheritance:

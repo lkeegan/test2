@@ -1,0 +1,20 @@
+Database
+========
+
+Some general introduction to this package
+
+database.urls
+-------------
+
+.. automodule:: database.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+database.views
+--------------
+
+.. automodule:: database.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
