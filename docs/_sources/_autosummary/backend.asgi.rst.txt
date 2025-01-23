@@ -1,6 +1,0 @@
-backend.asgi
-============
-
-.. automodule:: backend.asgi
-
-   

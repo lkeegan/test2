@@ -1,6 +1,0 @@
-backend.data.questionnaireresponses
-===================================
-
-.. automodule:: backend.data.questionnaireresponses
-
-   

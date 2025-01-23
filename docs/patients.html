@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>patients package &mdash; backend  documentation</title>
+  <title>Patients &mdash; backend  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="questionnaire_responses package" href="questionnaire_responses.html" />
-    <link rel="prev" title="measure_reports package" href="measure_reports.html" /> 
+    <link rel="next" title="Questionnaires" href="questionnaires.html" />
+    <link rel="prev" title="Measure Reports" href="measure_reports.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,50 +42,46 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local_development.html">Development</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development.html#run-locally-with-python">Run locally with Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development.html#run-with-docker">Run with Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">api package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="conditions.html">conditions package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data.html">data package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="database.html">database package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encounters.html">encounters package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="journeys.html">journeys package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manage.html">manage module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="measure_reports.html">measure_reports package</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">patients package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-patients.fhir">patients.fhir module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="conditions.html">Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encounters.html">Encounters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journeys.html">Journeys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="measure_reports.html">Measure Reports</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Patients</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-patients.fhir">patients.fhir</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#patients.fhir.get_address"><code class="docutils literal notranslate"><span class="pre">get_address()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#patients.fhir.get_name"><code class="docutils literal notranslate"><span class="pre">get_name()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#patients.fhir.patient_res"><code class="docutils literal notranslate"><span class="pre">patient_res()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#patients.fhir.resource_from_bundle"><code class="docutils literal notranslate"><span class="pre">resource_from_bundle()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-patients.resources">patients.resources module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-patients.resources">patients.resources</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#patients.resources.Address"><code class="docutils literal notranslate"><span class="pre">Address</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#patients.resources.Name"><code class="docutils literal notranslate"><span class="pre">Name</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#patients.resources.Patient"><code class="docutils literal notranslate"><span class="pre">Patient</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-patients.serializers">patients.serializers module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-patients.serializers">patients.serializers</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#patients.serializers.PatientSerializer"><code class="docutils literal notranslate"><span class="pre">PatientSerializer</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-patients.urls">patients.urls module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-patients.views">patients.views module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-patients.urls">patients.urls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-patients.views">patients.views</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#patients.views.id"><code class="docutils literal notranslate"><span class="pre">id()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#patients.views.list"><code class="docutils literal notranslate"><span class="pre">list()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-patients">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">questionnaire_responses package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="questionnaires.html">questionnaires package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="templates.html">templates package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaires.html">Questionnaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">Questionnaire Responses</a></li>
 </ul>
 
         </div>
@@ -102,8 +98,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="development.html">Development</a></li>
-      <li class="breadcrumb-item active">patients package</li>
+      <li class="breadcrumb-item active">Patients</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/patients.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -113,13 +108,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="patients-package">
-<h1>patients package<a class="headerlink" href="#patients-package" title="Link to this heading"></a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
-</section>
+  <section id="patients">
+<h1>Patients<a class="headerlink" href="#patients" title="Link to this heading"></a></h1>
+<p>Some general introduction to this package</p>
 <section id="module-patients.fhir">
-<span id="patients-fhir-module"></span><h2>patients.fhir module<a class="headerlink" href="#module-patients.fhir" title="Link to this heading"></a></h2>
+<span id="patients-fhir"></span><h2>patients.fhir<a class="headerlink" href="#module-patients.fhir" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="patients.fhir.get_address">
 <span class="sig-prename descclassname"><span class="pre">patients.fhir.</span></span><span class="sig-name descname"><span class="pre">get_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patients.fhir.get_address" title="Link to this definition"></a></dt>
@@ -158,7 +151,7 @@
 
 </section>
 <section id="module-patients.resources">
-<span id="patients-resources-module"></span><h2>patients.resources module<a class="headerlink" href="#module-patients.resources" title="Link to this heading"></a></h2>
+<span id="patients-resources"></span><h2>patients.resources<a class="headerlink" href="#module-patients.resources" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="patients.resources.Address">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patients.resources.</span></span><span class="sig-name descname"><span class="pre">Address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">city</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">street</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patients.resources.Address" title="Link to this definition"></a></dt>
@@ -182,7 +175,7 @@
 
 </section>
 <section id="module-patients.serializers">
-<span id="patients-serializers-module"></span><h2>patients.serializers module<a class="headerlink" href="#module-patients.serializers" title="Link to this heading"></a></h2>
+<span id="patients-serializers"></span><h2>patients.serializers<a class="headerlink" href="#module-patients.serializers" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="patients.serializers.PatientSerializer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patients.serializers.</span></span><span class="sig-name descname"><span class="pre">PatientSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patients.serializers.PatientSerializer" title="Link to this definition"></a></dt>
@@ -192,10 +185,10 @@
 
 </section>
 <section id="module-patients.urls">
-<span id="patients-urls-module"></span><h2>patients.urls module<a class="headerlink" href="#module-patients.urls" title="Link to this heading"></a></h2>
+<span id="patients-urls"></span><h2>patients.urls<a class="headerlink" href="#module-patients.urls" title="Link to this heading"></a></h2>
 </section>
 <section id="module-patients.views">
-<span id="patients-views-module"></span><h2>patients.views module<a class="headerlink" href="#module-patients.views" title="Link to this heading"></a></h2>
+<span id="patients-views"></span><h2>patients.views<a class="headerlink" href="#module-patients.views" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="patients.views.id">
 <em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patients.views.</span></span><span class="sig-name descname"><span class="pre">id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patients.views.id" title="Link to this definition"></a></dt>
@@ -223,17 +216,14 @@
 </dd></dl>
 
 </section>
-<section id="module-patients">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-patients" title="Link to this heading"></a></h2>
-</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="measure_reports.html" class="btn btn-neutral float-left" title="measure_reports package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="questionnaire_responses.html" class="btn btn-neutral float-right" title="questionnaire_responses package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="measure_reports.html" class="btn btn-neutral float-left" title="Measure Reports" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="questionnaires.html" class="btn btn-neutral float-right" title="Questionnaires" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

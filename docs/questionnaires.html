@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>questionnaires package &mdash; backend  documentation</title>
+  <title>Questionnaires &mdash; backend  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="templates package" href="templates.html" />
-    <link rel="prev" title="questionnaire_responses package" href="questionnaire_responses.html" /> 
+    <link rel="next" title="Questionnaire Responses" href="questionnaire_responses.html" />
+    <link rel="prev" title="Patients" href="patients.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,24 +42,21 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local_development.html">Development</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development.html#run-locally-with-python">Run locally with Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development.html#run-with-docker">Run with Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">api package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="conditions.html">conditions package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data.html">data package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="database.html">database package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encounters.html">encounters package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="journeys.html">journeys package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manage.html">manage module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="measure_reports.html">measure_reports package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="patients.html">patients package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">questionnaire_responses package</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">questionnaires package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.fhir">questionnaires.fhir module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="conditions.html">Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encounters.html">Encounters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journeys.html">Journeys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="measure_reports.html">Measure Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patients.html">Patients</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Questionnaires</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.fhir">questionnaires.fhir</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.fhir.get_questions"><code class="docutils literal notranslate"><span class="pre">get_questions()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.fhir.questionnaire_action_res"><code class="docutils literal notranslate"><span class="pre">questionnaire_action_res()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.fhir.questionnaire_default_ids_res"><code class="docutils literal notranslate"><span class="pre">questionnaire_default_ids_res()</span></code></a></li>
@@ -71,7 +68,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.fhir.resource_from_bundle"><code class="docutils literal notranslate"><span class="pre">resource_from_bundle()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.resources">questionnaires.resources module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.resources">questionnaires.resources</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.resources.Questionnaire"><code class="docutils literal notranslate"><span class="pre">Questionnaire</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.resources.QuestionnaireAction"><code class="docutils literal notranslate"><span class="pre">QuestionnaireAction</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.resources.QuestionnaireField"><code class="docutils literal notranslate"><span class="pre">QuestionnaireField</span></code></a></li>
@@ -79,15 +76,15 @@
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.resources.QuestionnaireItemGroup"><code class="docutils literal notranslate"><span class="pre">QuestionnaireItemGroup</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.serializers">questionnaires.serializers module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.serializers">questionnaires.serializers</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.serializers.QuestionnaireActionSerializer"><code class="docutils literal notranslate"><span class="pre">QuestionnaireActionSerializer</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.serializers.QuestionnaireIDsSerializer"><code class="docutils literal notranslate"><span class="pre">QuestionnaireIDsSerializer</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.serializers.QuestionnaireSerializer"><code class="docutils literal notranslate"><span class="pre">QuestionnaireSerializer</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.serializers.QuestionnaireWaitingSerializer"><code class="docutils literal notranslate"><span class="pre">QuestionnaireWaitingSerializer</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.urls">questionnaires.urls module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.views">questionnaires.views module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.urls">questionnaires.urls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires.views">questionnaires.views</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.views.action"><code class="docutils literal notranslate"><span class="pre">action()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.views.default"><code class="docutils literal notranslate"><span class="pre">default()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.views.default_selection"><code class="docutils literal notranslate"><span class="pre">default_selection()</span></code></a></li>
@@ -99,10 +96,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#questionnaires.views.waiting_patient_list"><code class="docutils literal notranslate"><span class="pre">waiting_patient_list()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-questionnaires">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="templates.html">templates package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">Questionnaire Responses</a></li>
 </ul>
 
         </div>
@@ -119,8 +115,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="development.html">Development</a></li>
-      <li class="breadcrumb-item active">questionnaires package</li>
+      <li class="breadcrumb-item active">Questionnaires</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/questionnaires.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -130,13 +125,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="questionnaires-package">
-<h1>questionnaires package<a class="headerlink" href="#questionnaires-package" title="Link to this heading"></a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
-</section>
+  <section id="questionnaires">
+<h1>Questionnaires<a class="headerlink" href="#questionnaires" title="Link to this heading"></a></h1>
+<p>Some general introduction to this package</p>
 <section id="module-questionnaires.fhir">
-<span id="questionnaires-fhir-module"></span><h2>questionnaires.fhir module<a class="headerlink" href="#module-questionnaires.fhir" title="Link to this heading"></a></h2>
+<span id="questionnaires-fhir"></span><h2>questionnaires.fhir<a class="headerlink" href="#module-questionnaires.fhir" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="questionnaires.fhir.get_questions">
 <span class="sig-prename descclassname"><span class="pre">questionnaires.fhir.</span></span><span class="sig-name descname"><span class="pre">get_questions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quest</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#questionnaires.fhir.get_questions" title="Link to this definition"></a></dt>
@@ -245,7 +238,7 @@ q_entries (any): FHIR Bundle resource (questionnaires)</p>
 
 </section>
 <section id="module-questionnaires.resources">
-<span id="questionnaires-resources-module"></span><h2>questionnaires.resources module<a class="headerlink" href="#module-questionnaires.resources" title="Link to this heading"></a></h2>
+<span id="questionnaires-resources"></span><h2>questionnaires.resources<a class="headerlink" href="#module-questionnaires.resources" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="questionnaires.resources.Questionnaire">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">questionnaires.resources.</span></span><span class="sig-name descname"><span class="pre">Questionnaire</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">questions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#questionnaires.resources.Questionnaire" title="Link to this definition"></a></dt>
@@ -294,7 +287,7 @@ group: Questionnaire item array</p>
 
 </section>
 <section id="module-questionnaires.serializers">
-<span id="questionnaires-serializers-module"></span><h2>questionnaires.serializers module<a class="headerlink" href="#module-questionnaires.serializers" title="Link to this heading"></a></h2>
+<span id="questionnaires-serializers"></span><h2>questionnaires.serializers<a class="headerlink" href="#module-questionnaires.serializers" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="questionnaires.serializers.QuestionnaireActionSerializer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">questionnaires.serializers.</span></span><span class="sig-name descname"><span class="pre">QuestionnaireActionSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#questionnaires.serializers.QuestionnaireActionSerializer" title="Link to this definition"></a></dt>
@@ -341,10 +334,10 @@ group: Questionnaire item array</p>
 
 </section>
 <section id="module-questionnaires.urls">
-<span id="questionnaires-urls-module"></span><h2>questionnaires.urls module<a class="headerlink" href="#module-questionnaires.urls" title="Link to this heading"></a></h2>
+<span id="questionnaires-urls"></span><h2>questionnaires.urls<a class="headerlink" href="#module-questionnaires.urls" title="Link to this heading"></a></h2>
 </section>
 <section id="module-questionnaires.views">
-<span id="questionnaires-views-module"></span><h2>questionnaires.views module<a class="headerlink" href="#module-questionnaires.views" title="Link to this heading"></a></h2>
+<span id="questionnaires-views"></span><h2>questionnaires.views<a class="headerlink" href="#module-questionnaires.views" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="questionnaires.views.action">
 <em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">questionnaires.views.</span></span><span class="sig-name descname"><span class="pre">action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#questionnaires.views.action" title="Link to this definition"></a></dt>
@@ -455,17 +448,14 @@ Returns the Questionnaire id, name and questions with linkID, title, answer text
 </dd></dl>
 
 </section>
-<section id="module-questionnaires">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-questionnaires" title="Link to this heading"></a></h2>
-</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="questionnaire_responses.html" class="btn btn-neutral float-left" title="questionnaire_responses package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="templates.html" class="btn btn-neutral float-right" title="templates package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="patients.html" class="btn btn-neutral float-left" title="Patients" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="questionnaire_responses.html" class="btn btn-neutral float-right" title="Questionnaire Responses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,6 +1,0 @@
-backend.api.urls
-================
-
-.. automodule:: backend.api.urls
-
-   

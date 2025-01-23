@@ -1,22 +1,24 @@
 Arztansicht Backend
 ===================
 
-High level overview of what this is, what other services it interacts with goes here - this is the home page of the docs...
+High level description of what this is, what other services it interacts with goes here - this is the home page of the docs...
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Getting started
 
-   development
-   api
+   overview
+   local_development
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API
+
    conditions
-   data
    database
    encounters
    journeys
-   manage
    measure_reports
    patients
-   questionnaire_responses
    questionnaires
-   templates
+   questionnaire_responses

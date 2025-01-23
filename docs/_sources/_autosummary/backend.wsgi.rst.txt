@@ -1,6 +1,0 @@
-backend.wsgi
-============
-
-.. automodule:: backend.wsgi
-
-   

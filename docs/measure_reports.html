@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>measure_reports package &mdash; backend  documentation</title>
+  <title>Measure Reports &mdash; backend  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="patients package" href="patients.html" />
-    <link rel="prev" title="manage module" href="manage.html" /> 
+    <link rel="next" title="Patients" href="patients.html" />
+    <link rel="prev" title="Journeys" href="journeys.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,21 +42,19 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local_development.html">Development</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development.html#run-locally-with-python">Run locally with Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development.html#run-with-docker">Run with Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">api package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="conditions.html">conditions package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data.html">data package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="database.html">database package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encounters.html">encounters package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="journeys.html">journeys package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manage.html">manage module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">measure_reports package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.fhir">measure_reports.fhir module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="conditions.html">Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encounters.html">Encounters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journeys.html">Journeys</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Measure Reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.fhir">measure_reports.fhir</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.decision_update"><code class="docutils literal notranslate"><span class="pre">decision_update()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.diagnostic_report_by_ref"><code class="docutils literal notranslate"><span class="pre">diagnostic_report_by_ref()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.measure_report_decisions"><code class="docutils literal notranslate"><span class="pre">measure_report_decisions()</span></code></a></li>
@@ -65,28 +63,26 @@
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.fhir.resource_from_bundle"><code class="docutils literal notranslate"><span class="pre">resource_from_bundle()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.resources">measure_reports.resources module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.resources">measure_reports.resources</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.resources.MeasureReport"><code class="docutils literal notranslate"><span class="pre">MeasureReport</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.serializers">measure_reports.serializers module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.serializers">measure_reports.serializers</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.serializers.MeasureReportSerializer"><code class="docutils literal notranslate"><span class="pre">MeasureReportSerializer</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.urls">measure_reports.urls module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.views">measure_reports.views module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.urls">measure_reports.urls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports.views">measure_reports.views</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.views.decision_update"><code class="docutils literal notranslate"><span class="pre">decision_update()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.views.list"><code class="docutils literal notranslate"><span class="pre">list()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#measure_reports.views.patient_id"><code class="docutils literal notranslate"><span class="pre">patient_id()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-measure_reports">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="patients.html">patients package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">questionnaire_responses package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="questionnaires.html">questionnaires package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="templates.html">templates package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patients.html">Patients</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaires.html">Questionnaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">Questionnaire Responses</a></li>
 </ul>
 
         </div>
@@ -103,8 +99,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="development.html">Development</a></li>
-      <li class="breadcrumb-item active">measure_reports package</li>
+      <li class="breadcrumb-item active">Measure Reports</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/measure_reports.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -114,13 +109,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="measure-reports-package">
-<h1>measure_reports package<a class="headerlink" href="#measure-reports-package" title="Link to this heading"></a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
-</section>
+  <section id="measure-reports">
+<h1>Measure Reports<a class="headerlink" href="#measure-reports" title="Link to this heading"></a></h1>
+<p>Some general introduction to this package</p>
 <section id="module-measure_reports.fhir">
-<span id="measure-reports-fhir-module"></span><h2>measure_reports.fhir module<a class="headerlink" href="#module-measure_reports.fhir" title="Link to this heading"></a></h2>
+<span id="measure-reports-fhir"></span><h2>measure_reports.fhir<a class="headerlink" href="#module-measure_reports.fhir" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="measure_reports.fhir.decision_update">
 <span class="sig-prename descclassname"><span class="pre">measure_reports.fhir.</span></span><span class="sig-name descname"><span class="pre">decision_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">report</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decision</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.fhir.decision_update" title="Link to this definition"></a></dt>
@@ -195,7 +188,7 @@ scores (any, optional): Score values. Defaults to None.</p>
 
 </section>
 <section id="module-measure_reports.resources">
-<span id="measure-reports-resources-module"></span><h2>measure_reports.resources module<a class="headerlink" href="#module-measure_reports.resources" title="Link to this heading"></a></h2>
+<span id="measure-reports-resources"></span><h2>measure_reports.resources<a class="headerlink" href="#module-measure_reports.resources" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="measure_reports.resources.MeasureReport">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.resources.</span></span><span class="sig-name descname"><span class="pre">MeasureReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.resources.MeasureReport" title="Link to this definition"></a></dt>
@@ -207,7 +200,7 @@ details: Scores (name, score, interpretation and data)</p>
 
 </section>
 <section id="module-measure_reports.serializers">
-<span id="measure-reports-serializers-module"></span><h2>measure_reports.serializers module<a class="headerlink" href="#module-measure_reports.serializers" title="Link to this heading"></a></h2>
+<span id="measure-reports-serializers"></span><h2>measure_reports.serializers<a class="headerlink" href="#module-measure_reports.serializers" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="measure_reports.serializers.MeasureReportSerializer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.serializers.</span></span><span class="sig-name descname"><span class="pre">MeasureReportSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.serializers.MeasureReportSerializer" title="Link to this definition"></a></dt>
@@ -217,10 +210,10 @@ details: Scores (name, score, interpretation and data)</p>
 
 </section>
 <section id="module-measure_reports.urls">
-<span id="measure-reports-urls-module"></span><h2>measure_reports.urls module<a class="headerlink" href="#module-measure_reports.urls" title="Link to this heading"></a></h2>
+<span id="measure-reports-urls"></span><h2>measure_reports.urls<a class="headerlink" href="#module-measure_reports.urls" title="Link to this heading"></a></h2>
 </section>
 <section id="module-measure_reports.views">
-<span id="measure-reports-views-module"></span><h2>measure_reports.views module<a class="headerlink" href="#module-measure_reports.views" title="Link to this heading"></a></h2>
+<span id="measure-reports-views"></span><h2>measure_reports.views<a class="headerlink" href="#module-measure_reports.views" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="measure_reports.views.decision_update">
 <em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">measure_reports.views.</span></span><span class="sig-name descname"><span class="pre">decision_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#measure_reports.views.decision_update" title="Link to this definition"></a></dt>
@@ -269,17 +262,14 @@ Returns list of decisions by patient.</p>
 </dd></dl>
 
 </section>
-<section id="module-measure_reports">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-measure_reports" title="Link to this heading"></a></h2>
-</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="manage.html" class="btn btn-neutral float-left" title="manage module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="patients.html" class="btn btn-neutral float-right" title="patients package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="journeys.html" class="btn btn-neutral float-left" title="Journeys" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="patients.html" class="btn btn-neutral float-right" title="Patients" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

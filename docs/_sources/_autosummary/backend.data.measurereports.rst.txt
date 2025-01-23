@@ -1,6 +1,0 @@
-backend.data.measurereports
-===========================
-
-.. automodule:: backend.data.measurereports
-
-   

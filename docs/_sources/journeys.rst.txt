@@ -1,53 +1,45 @@
-journeys package
-================
+Journeys
+========
 
-Submodules
-----------
+Some general introduction to this package
 
-journeys.fhir module
---------------------
+
+journeys.fhir
+-------------
 
 .. automodule:: journeys.fhir
    :members:
    :undoc-members:
    :show-inheritance:
 
-journeys.resources module
--------------------------
+journeys.resources
+------------------
 
 .. automodule:: journeys.resources
    :members:
    :undoc-members:
    :show-inheritance:
 
-journeys.serializers module
----------------------------
+journeys.serializers
+--------------------
 
 .. automodule:: journeys.serializers
    :members:
    :undoc-members:
    :show-inheritance:
 
-journeys.urls module
---------------------
+journeys.urls
+-------------
 
 .. automodule:: journeys.urls
    :members:
    :undoc-members:
    :show-inheritance:
 
-journeys.views module
----------------------
+journeys.views
+--------------
 
 .. automodule:: journeys.views
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: journeys
    :members:
    :undoc-members:
    :show-inheritance:

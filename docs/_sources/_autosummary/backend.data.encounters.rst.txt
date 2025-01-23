@@ -1,6 +1,0 @@
-backend.data.encounters
-=======================
-
-.. automodule:: backend.data.encounters
-
-   

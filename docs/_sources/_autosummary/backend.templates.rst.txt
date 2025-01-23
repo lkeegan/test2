@@ -1,6 +1,0 @@
-backend.templates
-=================
-
-.. automodule:: backend.templates
-
-   

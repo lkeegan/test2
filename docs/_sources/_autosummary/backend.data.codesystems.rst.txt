@@ -1,6 +1,0 @@
-backend.data.codesystems
-========================
-
-.. automodule:: backend.data.codesystems
-
-   

@@ -1,53 +1,44 @@
-conditions package
-==================
+Conditions
+==========
 
-Submodules
-----------
+Some general introduction to this package
 
-conditions.fhir module
-----------------------
+conditions.fhir
+---------------
 
 .. automodule:: conditions.fhir
    :members:
    :undoc-members:
    :show-inheritance:
 
-conditions.resources module
----------------------------
+conditions.resources
+--------------------
 
 .. automodule:: conditions.resources
    :members:
    :undoc-members:
    :show-inheritance:
 
-conditions.serializers module
------------------------------
+conditions.serializers
+----------------------
 
 .. automodule:: conditions.serializers
    :members:
    :undoc-members:
    :show-inheritance:
 
-conditions.urls module
-----------------------
+conditions.urls
+---------------
 
 .. automodule:: conditions.urls
    :members:
    :undoc-members:
    :show-inheritance:
 
-conditions.views module
------------------------
+conditions.views
+----------------
 
 .. automodule:: conditions.views
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: conditions
    :members:
    :undoc-members:
    :show-inheritance:

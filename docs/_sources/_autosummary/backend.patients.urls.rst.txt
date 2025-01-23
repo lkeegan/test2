@@ -1,6 +1,0 @@
-backend.patients.urls
-=====================
-
-.. automodule:: backend.patients.urls
-
-   

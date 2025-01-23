@@ -1,6 +1,0 @@
-backend.journeys.urls
-=====================
-
-.. automodule:: backend.journeys.urls
-
-   

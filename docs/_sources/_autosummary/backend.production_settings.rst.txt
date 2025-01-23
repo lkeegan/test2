@@ -1,6 +1,0 @@
-backend.production\_settings
-============================
-
-.. automodule:: backend.production_settings
-
-   

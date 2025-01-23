@@ -1,6 +1,0 @@
-backend.measure\_reports.urls
-=============================
-
-.. automodule:: backend.measure_reports.urls
-
-   

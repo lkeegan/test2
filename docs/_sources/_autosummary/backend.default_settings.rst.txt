@@ -1,6 +1,0 @@
-backend.default\_settings
-=========================
-
-.. automodule:: backend.default_settings
-
-   

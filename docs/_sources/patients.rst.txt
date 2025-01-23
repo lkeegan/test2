@@ -1,53 +1,44 @@
-patients package
-================
+Patients
+========
 
-Submodules
-----------
+Some general introduction to this package
 
-patients.fhir module
---------------------
+patients.fhir
+-------------
 
 .. automodule:: patients.fhir
    :members:
    :undoc-members:
    :show-inheritance:
 
-patients.resources module
--------------------------
+patients.resources
+------------------
 
 .. automodule:: patients.resources
    :members:
    :undoc-members:
    :show-inheritance:
 
-patients.serializers module
----------------------------
+patients.serializers
+--------------------
 
 .. automodule:: patients.serializers
    :members:
    :undoc-members:
    :show-inheritance:
 
-patients.urls module
---------------------
+patients.urls
+-------------
 
 .. automodule:: patients.urls
    :members:
    :undoc-members:
    :show-inheritance:
 
-patients.views module
----------------------
+patients.views
+--------------
 
 .. automodule:: patients.views
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: patients
    :members:
    :undoc-members:
    :show-inheritance:
