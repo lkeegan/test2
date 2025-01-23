@@ -1,49 +1,13 @@
-.. backend documentation master file, created by
-   sphinx-quickstart on Wed Dec 11 15:50:58 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Arztansicht Backend
+===================
 
-Arztansicht Backend documentation
-=====================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
-Create the database
--------------------
-
-:code:`python manage.py migrate`
-
-Create a new Django account
--------------------
-
-:code:`python manage.py createsuperuser`
-
-Start the Django server
--------------------
-
-:code:`python manage.py runserver`
-
-Start the `HAPI FHIR server <https://github.com/hapifhir/hapi-fhir-jpaserver-starter?tab=readme-ov-file#running-via-docker-hub>`_ using Docker
--------------------
-:code:`docker run -p 8080:8080 hapiproject/hapi:latest`
-
-Initialize the server with FHIR resources
--------------------
-
-- By opening the `/api/database` route at http://127.0.0.1:8000/api/database/
-
-
-Build and run the Docker containers
--------------------
-:code:`docker-compose up --build -d`
-
+High level overview of what this is, what other services it interacts with goes here - this is the home page of the docs...
 
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
 
+   development
    api
    conditions
    data
@@ -56,4 +20,3 @@ Build and run the Docker containers
    questionnaire_responses
    questionnaires
    templates
-   tests

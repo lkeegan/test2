@@ -42,7 +42,10 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html#run-locally-with-python">Run locally with Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html#run-with-docker">Run with Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">api package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conditions.html">conditions package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">data package</a></li>
@@ -55,81 +58,6 @@
 <li class="toctree-l1"><a class="reference internal" href="questionnaire_responses.html">questionnaire_responses package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="questionnaires.html">questionnaires package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="templates.html">templates package</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">tests package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests.test_api">tests.test_api module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_api.test_encounters"><code class="docutils literal notranslate"><span class="pre">test_encounters()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_api.test_journey_id"><code class="docutils literal notranslate"><span class="pre">test_journey_id()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_api.test_measurereports"><code class="docutils literal notranslate"><span class="pre">test_measurereports()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_api.test_patient_id"><code class="docutils literal notranslate"><span class="pre">test_patient_id()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_api.test_patient_list"><code class="docutils literal notranslate"><span class="pre">test_patient_list()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_api.test_questionnaire_list"><code class="docutils literal notranslate"><span class="pre">test_questionnaire_list()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_api.test_questionnaireresponse"><code class="docutils literal notranslate"><span class="pre">test_questionnaireresponse()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests.test_fhir_encounter">tests.test_fhir_encounter module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_encounter.encounters"><code class="docutils literal notranslate"><span class="pre">encounters</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tests.test_fhir_encounter.encounters.enc1"><code class="docutils literal notranslate"><span class="pre">encounters.enc1</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_encounter.parse_obj"><code class="docutils literal notranslate"><span class="pre">parse_obj()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_encounter.test_fhir_patient"><code class="docutils literal notranslate"><span class="pre">test_fhir_patient()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_encounter.validate"><code class="docutils literal notranslate"><span class="pre">validate()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests.test_fhir_journey">tests.test_fhir_journey module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_journey.parse_obj"><code class="docutils literal notranslate"><span class="pre">parse_obj()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_journey.patients"><code class="docutils literal notranslate"><span class="pre">patients</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tests.test_fhir_journey.patients.pat1"><code class="docutils literal notranslate"><span class="pre">patients.pat1</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_journey.test_fhir_patient"><code class="docutils literal notranslate"><span class="pre">test_fhir_patient()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_journey.validate"><code class="docutils literal notranslate"><span class="pre">validate()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests.test_fhir_measurereport">tests.test_fhir_measurereport module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_measurereport.measurereports"><code class="docutils literal notranslate"><span class="pre">measurereports</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tests.test_fhir_measurereport.measurereports.mr1"><code class="docutils literal notranslate"><span class="pre">measurereports.mr1</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_measurereport.parse_obj"><code class="docutils literal notranslate"><span class="pre">parse_obj()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_measurereport.test_fhir_patient"><code class="docutils literal notranslate"><span class="pre">test_fhir_patient()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_measurereport.validate"><code class="docutils literal notranslate"><span class="pre">validate()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests.test_fhir_patient">tests.test_fhir_patient module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_patient.parse_obj"><code class="docutils literal notranslate"><span class="pre">parse_obj()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_patient.patients"><code class="docutils literal notranslate"><span class="pre">patients</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tests.test_fhir_patient.patients.pat1"><code class="docutils literal notranslate"><span class="pre">patients.pat1</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_patient.test_fhir_patient"><code class="docutils literal notranslate"><span class="pre">test_fhir_patient()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_patient.validate"><code class="docutils literal notranslate"><span class="pre">validate()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests.test_fhir_questionnaire">tests.test_fhir_questionnaire module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire.parse_obj"><code class="docutils literal notranslate"><span class="pre">parse_obj()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire.questionnaires"><code class="docutils literal notranslate"><span class="pre">questionnaires</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tests.test_fhir_questionnaire.questionnaires.qu1"><code class="docutils literal notranslate"><span class="pre">questionnaires.qu1</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire.test_fhir_patient"><code class="docutils literal notranslate"><span class="pre">test_fhir_patient()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire.validate"><code class="docutils literal notranslate"><span class="pre">validate()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests.test_fhir_questionnaire_response">tests.test_fhir_questionnaire_response module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire_response.parse_obj"><code class="docutils literal notranslate"><span class="pre">parse_obj()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire_response.questionnaireresponses"><code class="docutils literal notranslate"><span class="pre">questionnaireresponses</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tests.test_fhir_questionnaire_response.questionnaireresponses.qres1"><code class="docutils literal notranslate"><span class="pre">questionnaireresponses.qres1</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire_response.test_fhir_patient"><code class="docutils literal notranslate"><span class="pre">test_fhir_patient()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tests.test_fhir_questionnaire_response.validate"><code class="docutils literal notranslate"><span class="pre">validate()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-tests">Module contents</a></li>
-</ul>
-</li>
 </ul>
 
         </div>
@@ -146,6 +74,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="development.html">Development</a></li>
       <li class="breadcrumb-item active">tests package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/tests.rst.txt" rel="nofollow"> View page source</a>
