@@ -15,4 +15,4 @@ jobs:
         shell: ${{ matrix.shell }}
     steps:
       - run: ls /usr/lib/*/*
-      - runL ls /*/*
+      - run: ls /*/*
