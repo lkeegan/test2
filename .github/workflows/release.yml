@@ -14,5 +14,4 @@ jobs:
       run:
         shell: ${{ matrix.shell }}
     steps:
-      - run: ls /usr/lib/*/*
-      - run: ls /*/*
+      - uses: spatial-model-editor/setup-ci@main
