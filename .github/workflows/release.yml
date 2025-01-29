@@ -1,0 +1,18 @@
+name: Test Linux Arm
+on: push
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: "ubuntu-22.04-arm"
+            shell: "bash"
+            LLVM_TARGETS_TO_BUILD: "AArch64"
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
+    steps:
+      - run: ls /usr/lib/*/*
+      - runL ls /*/*
